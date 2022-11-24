@@ -1,0 +1,83 @@
+warning: unused manifest key: source
+warning: unused imports: `get_service`, `http::StatusCode`, `response::Html`
+ --> src/main.rs:8:12
+  |
+8 | use axum::{http::StatusCode, routing::{get_service,get,post}, Router,response::Html};
+  |            ^^^^^^^^^^^^^^^^            ^^^^^^^^^^^                   ^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+warning: unused imports: `services::ServeDir`, `trace::TraceLayer`
+ --> src/main.rs:9:18
+  |
+9 | use tower_http::{services::ServeDir, trace::TraceLayer};
+  |                  ^^^^^^^^^^^^^^^^^^  ^^^^^^^^^^^^^^^^^
+
+warning: `know_graph` (bin "know_graph") generated 2 warnings
+    Finished dev [unoptimized + debuginfo] target(s) in 0.07s
+     Running `target/debug/know_graph`
+warning: unused manifest key: source
+warning: unused imports: `get_service`, `http::StatusCode`, `response::Html`
+ --> src/main.rs:8:12
+  |
+8 | use axum::{http::StatusCode, routing::{get_service,get,post}, Router,response::Html};
+  |            ^^^^^^^^^^^^^^^^            ^^^^^^^^^^^                   ^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+warning: unused imports: `services::ServeDir`, `trace::TraceLayer`
+ --> src/main.rs:9:18
+  |
+9 | use tower_http::{services::ServeDir, trace::TraceLayer};
+  |                  ^^^^^^^^^^^^^^^^^^  ^^^^^^^^^^^^^^^^^
+
+warning: `know_graph` (bin "know_graph") generated 2 warnings
+    Finished dev [unoptimized + debuginfo] target(s) in 0.07s
+     Running `target/debug/know_graph`
+thread 'tokio-runtime-worker' panicked at 'called `Option::unwrap()` on a `None` value', src/main.rs:39:35
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+thread 'tokio-runtime-worker' panicked at 'called `Option::unwrap()` on a `None` value', src/main.rs:39:35
+thread 'tokio-runtime-worker' panicked at 'called `Option::unwrap()` on a `None` value', src/main.rs:39:35
+thread 'tokio-runtime-worker' panicked at 'called `Option::unwrap()` on a `None` value', src/main.rs:39:35
+thread 'tokio-runtime-worker' panicked at 'called `Option::unwrap()` on a `None` value', src/main.rs:39:35
+thread 'tokio-runtime-worker' panicked at 'called `Option::unwrap()` on a `None` value', src/main.rs:39:35
+thread 'tokio-runtime-worker' panicked at 'called `Option::unwrap()` on a `None` value', src/main.rs:39:35
+thread 'tokio-runtime-worker' panicked at 'called `Option::unwrap()` on a `None` value', src/main.rs:39:35
+thread 'tokio-runtime-worker' panicked at 'called `Option::unwrap()` on a `None` value', src/main.rs:39:35
+thread 'tokio-runtime-worker' panicked at 'called `Option::unwrap()` on a `None` value', src/main.rs:39:35
+warning: unused manifest key: source
+warning: unused imports: `get_service`, `http::StatusCode`, `response::Html`
+ --> src/main.rs:8:12
+  |
+8 | use axum::{http::StatusCode, routing::{get_service,get,post}, Router,response::Html};
+  |            ^^^^^^^^^^^^^^^^            ^^^^^^^^^^^                   ^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+warning: unused imports: `services::ServeDir`, `trace::TraceLayer`
+ --> src/main.rs:9:18
+  |
+9 | use tower_http::{services::ServeDir, trace::TraceLayer};
+  |                  ^^^^^^^^^^^^^^^^^^  ^^^^^^^^^^^^^^^^^
+
+warning: `know_graph` (bin "know_graph") generated 2 warnings
+    Finished dev [unoptimized + debuginfo] target(s) in 0.07s
+     Running `target/debug/know_graph`
+warning: unused manifest key: source
+warning: unused imports: `get_service`, `http::StatusCode`, `response::Html`
+ --> src/main.rs:8:12
+  |
+8 | use axum::{http::StatusCode, routing::{get_service,get,post}, Router,response::Html};
+  |            ^^^^^^^^^^^^^^^^            ^^^^^^^^^^^                   ^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+warning: unused imports: `services::ServeDir`, `trace::TraceLayer`
+ --> src/main.rs:9:18
+  |
+9 | use tower_http::{services::ServeDir, trace::TraceLayer};
+  |                  ^^^^^^^^^^^^^^^^^^  ^^^^^^^^^^^^^^^^^
+
+warning: `know_graph` (bin "know_graph") generated 2 warnings
+    Finished dev [unoptimized + debuginfo] target(s) in 0.09s
+     Running `target/debug/know_graph`

@@ -1,0 +1,51 @@
+<head>
+    <script type="text/javascript">
+    function load() {
+
+      if (typeof(Storage) !== "undefined") {
+        if (localStorage.class1) {
+            document.getElementById("class1").value=localStorage.getItem("class1");
+        }
+        if (localStorage.class2) {
+            document.getElementById("class2").value=localStorage.getItem("class2");
+        } 
+        if (localStorage.class3) {
+            document.getElementById("class3").value=localStorage.getItem("class3");
+        } 
+      } else {
+        console.log("unsupport");
+      }
+    };
+    
+    function submit_d(){
+        console.log('submmit');
+        localStorage.setItem("class1",document.getElementById("class1").value);
+        localStorage.setItem("class2",document.getElementById("class2").value);
+        localStorage.setItem("class3",document.getElementById("class3").value);
+    }
+    </script>
+    </head>
+<body onload="load();">
+    <div id="result"></div>
+    <form action="http://192.168.1.192:23000/D" method="post">
+        <label for="username"> 第一优先级任务</label>
+        <input type="text" name="class1" id="class1" placeholder="">
+        <br>
+        <label for="username"> 第二优先级任务</label>
+        <input type="text" name="class2" id="class2" placeholder="">
+        <br>
+        <label for="username"> 第三优先级任务</label>
+        <input type="text" name="class3" id="class3" placeholder="">
+        <br>
+        <label>本次D牌的优先级</label>
+        <input type="radio" name="rand_type" id="" value="1" checked>1
+        <input type="radio" name="rand_type" id="" value="2">2
+        <input type="radio" name="rand_type" id="" value="3">3
+        <br>
+        <input type="submit" onfocus ="return submit_d();"value="D!!!!!!">
+    </form>
+    <h1>规则</h1>
+    <p>1.按照任务重要程度，在输入框中填写待办事项，不同任务间使用空格分隔。e.g. "游泳 健身"</p>
+    <p>2.每次D牌按照顺序切换D牌等级，1级D牌只在第一优先级任务中随机选取，3级D牌在1，2，3优先级任务中随机选取</p>
+    <p>3.每次任务至少45分钟，请严格遵守，非必要不重新D牌！</p>
+</body>
